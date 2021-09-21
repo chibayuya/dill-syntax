@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.dill",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(process|endproc|of|define)\\b"
 			}]
 		},
 		"strings": {
@@ -25,6 +28,15 @@
 					"name": "constant.character.escape.dill",
 					"match": "\\\\."
 				}
+			]
+		},
+		"comments":{
+			"patterns": [
+				{
+				"begin": "^#",
+				"end": "$",
+				"name": "comment.dill"
+				} 
 			]
 		}
 	},
