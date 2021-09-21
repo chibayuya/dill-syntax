@@ -1,0 +1,25 @@
+{
+    "name": "dill-syntax",
+    "displayName": "dill Syntax",
+    "description": "DILL SyntaxHighLight",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dill",
+            "aliases": ["dill", "dill"],
+            "extensions": [".dill"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dill",
+            "scopeName": "source.dill",
+            "path": "./syntaxes/dill.tmLanguage.json"
+        }]
+    }
+}
