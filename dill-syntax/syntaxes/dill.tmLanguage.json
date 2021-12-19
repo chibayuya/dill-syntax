@@ -35,8 +35,13 @@
 				{
 				"begin": "^#",
 				"end": "$",
-				"name": "comment.dill"
-				} 
+				"name": "comment.line.dill"
+				},
+				{
+					"begin": "\\(\\*",
+					"end": "\\*\\)",
+					"name": "comment.block"
+				}
 			]
 		}
 	},
