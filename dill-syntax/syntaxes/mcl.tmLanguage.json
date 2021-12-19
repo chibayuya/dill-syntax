@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mcl",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.mcl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mcl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments":{
+			"patterns": [
+				{
+					"begin": "\\(\\*",
+					"end": "\\*\\)",
+					"name": "comment.mcl"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mcl"
+}

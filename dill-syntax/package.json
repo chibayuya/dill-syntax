@@ -15,11 +15,22 @@
             "aliases": ["dill", "dill"],
             "extensions": [".dill"],
             "configuration": "./language-configuration.json"
-        }],
+            },
+            {
+            "id": "mcl",
+            "aliases": ["mcl", "mcl"],
+            "extensions": [".mcl"],
+            "configuration": "./language-configuration.json"
+            }],
         "grammars": [{
             "language": "dill",
             "scopeName": "source.dill",
             "path": "./syntaxes/dill.tmLanguage.json"
-        }]
-    }
+            },
+            {
+            "language": "mcl",
+            "scopeName": "source.mcl",
+            "path": "./syntaxes/mcl.tmLanguage.json"
+            }]       
+        }
 }

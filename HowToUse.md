@@ -1,2 +1,2 @@
 # 使い方
-このdill-syntaxディレクトリを`~/.vscode/extension`にそのままいれる
+この`./dill-syntax`ディレクトリを`~/.vscode/extension`にそのままいれる
